@@ -12,14 +12,14 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#0b0f19',
-                        cardBg: '#131c2e',
-                        cardHover: '#1a2640',
+                        darkBg: '#041610',
+                        cardBg: '#09261c',
+                        cardHover: '#0f382a',
                         gold: '#d4af37',
                         goldLight: '#f3e5ab',
                         emeraldRich: '#064e3b',
-                        indigoRoyal: '#312e81',
-                        plumRich: '#581c87',
+                        emeraldDeep: '#022c22',
+                        jadeAccent: '#10b981',
                         coralAccent: '#f43f5e',
                         amberWarm: '#f59e0b'
                     },
@@ -46,10 +46,10 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #0b0f19;
+            background: #041610;
         }
         ::-webkit-scrollbar-thumb {
-            background: #312e81;
+            background: #064e3b;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
@@ -57,14 +57,14 @@
         }
 
         .glass-panel {
-            background: rgba(19, 28, 46, 0.7);
+            background: rgba(9, 38, 28, 0.7);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(212, 175, 55, 0.15);
         }
 
         .glass-panel-hover:hover {
-            background: rgba(26, 38, 64, 0.85);
+            background: rgba(15, 56, 42, 0.85);
             border-color: rgba(212, 175, 55, 0.4);
             box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.2);
         }
@@ -79,7 +79,7 @@
             position: absolute;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(49, 46, 129, 0.35) 0%, rgba(88, 28, 135, 0.15) 50%, transparent 70%);
+            background: radial-gradient(circle, rgba(6, 78, 59, 0.4) 0%, rgba(16, 185, 129, 0.15) 50%, transparent 70%);
             border-radius: 50%;
             z-index: 0;
             pointer-events: none;
@@ -96,7 +96,7 @@
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <!-- Brand Logo -->
             <a href="#" class="flex items-center space-x-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amberWarm via-gold to-purple-600 flex items-center justify-center shadow-lg shadow-gold/20 group-hover:scale-105 transition-transform">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amberWarm via-gold to-emeraldRich flex items-center justify-center shadow-lg shadow-gold/20 group-hover:scale-105 transition-transform">
                     <i class="fa-solid fa-champagne-glasses text-darkBg text-lg"></i>
                 </div>
                 <div>
@@ -226,7 +226,7 @@
                 <!-- Service 2 -->
                 <div class="glass-panel glass-panel-hover p-8 rounded-3xl transition-all duration-300 group flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigoRoyal/30 to-purple-600/30 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emeraldRich/40 to-jadeAccent/30 border border-emerald-500/30 flex items-center justify-center text-jadeAccent text-2xl mb-6 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-building-user"></i>
                         </div>
                         <h3 class="font-serif text-2xl font-bold mb-3 text-white group-hover:text-gold transition-colors">Corporate & Commercial</h3>
@@ -260,7 +260,7 @@
                 <!-- Service 4 -->
                 <div class="glass-panel glass-panel-hover p-8 rounded-3xl transition-all duration-300 group flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold/20 to-purple-600/20 border border-gold/30 flex items-center justify-center text-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold/20 to-emeraldRich/30 border border-gold/30 flex items-center justify-center text-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-camera-retro"></i>
                         </div>
                         <h3 class="font-serif text-2xl font-bold mb-3 text-white group-hover:text-gold transition-colors">Media Production</h3>
@@ -277,7 +277,7 @@
                 <!-- Service 5 -->
                 <div class="glass-panel glass-panel-hover p-8 rounded-3xl transition-all duration-300 group flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emeraldRich/40 to-teal-500/30 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emeraldRich/50 to-jadeAccent/30 border border-emerald-500/30 flex items-center justify-center text-jadeAccent text-2xl mb-6 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-sliders"></i>
                         </div>
                         <h3 class="font-serif text-2xl font-bold mb-3 text-white group-hover:text-gold transition-colors">Technical & Production</h3>
@@ -294,7 +294,7 @@
                 <!-- Service 6 -->
                 <div class="glass-panel glass-panel-hover p-8 rounded-3xl transition-all duration-300 group flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-plumRich/40 to-pink-600/30 border border-plumRich/50 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emeraldDeep/80 to-emeraldRich/50 border border-emerald-600/40 flex items-center justify-center text-emerald-300 text-2xl mb-6 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-couch"></i>
                         </div>
                         <h3 class="font-serif text-2xl font-bold mb-3 text-white group-hover:text-gold transition-colors">Decor & Aesthetics</h3>
@@ -328,7 +328,7 @@
                 <!-- Service 8 -->
                 <div class="glass-panel glass-panel-hover p-8 rounded-3xl transition-all duration-300 group flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigoRoyal/30 to-amberWarm/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emeraldRich/40 to-amberWarm/20 border border-emerald-500/30 flex items-center justify-center text-jadeAccent text-2xl mb-6 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-horse-head"></i>
                         </div>
                         <h3 class="font-serif text-2xl font-bold mb-3 text-white group-hover:text-gold transition-colors">Processions & Entries</h3>
@@ -345,7 +345,7 @@
                 <!-- Service 9 -->
                 <div class="glass-panel glass-panel-hover p-8 rounded-3xl transition-all duration-300 group flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emeraldRich/40 to-gold/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emeraldRich/50 to-gold/20 border border-emerald-500/30 flex items-center justify-center text-jadeAccent text-2xl mb-6 group-hover:scale-110 transition-transform">
                             <i class="fa-solid fa-utensils"></i>
                         </div>
                         <h3 class="font-serif text-2xl font-bold mb-3 text-white group-hover:text-gold transition-colors">Hospitality & Catering</h3>
@@ -500,7 +500,7 @@
 
                 <!-- Visual Card Showcase -->
                 <div class="relative">
-                    <div class="absolute -inset-4 bg-gradient-to-r from-gold/30 to-purple-600/30 rounded-3xl blur-2xl opacity-50"></div>
+                    <div class="absolute -inset-4 bg-gradient-to-r from-gold/30 to-emeraldRich/30 rounded-3xl blur-2xl opacity-50"></div>
                     <div class="relative glass-panel p-8 sm:p-12 rounded-3xl border border-gold/30">
                         <div class="flex items-center justify-between mb-8 pb-6 border-b border-white/10">
                             <div>
@@ -560,7 +560,7 @@
     <section id="experience" class="py-20 px-6 md:px-12 relative z-10">
         <div class="max-w-6xl mx-auto rounded-3xl glass-panel p-10 sm:p-16 border border-gold/40 text-center relative overflow-hidden">
             <div class="absolute -right-20 -top-20 w-64 h-64 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-emeraldRich/30 rounded-full blur-3xl pointer-events-none"></div>
             
             <div class="relative z-10 max-w-3xl mx-auto">
                 <span class="text-xs uppercase tracking-widest text-gold font-bold block mb-3">Let's Create Magic Together</span>
@@ -588,7 +588,7 @@
             <!-- Col 1: Brand Info -->
             <div class="lg:col-span-2">
                 <div class="flex items-center space-x-3 mb-4">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amberWarm via-gold to-purple-600 flex items-center justify-center shadow-lg">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amberWarm via-gold to-emeraldRich flex items-center justify-center shadow-lg">
                         <i class="fa-solid fa-champagne-glasses text-darkBg text-lg"></i>
                     </div>
                     <div>
@@ -772,7 +772,7 @@
 
     <!-- JavaScript Application Logic -->
     <script>
-        // 1. Particle Canvas Background Animation
+        // 1. Particle Canvas Background Animation (Emerald/Gold Motes)
         const canvas = document.getElementById('motionCanvas');
         const ctx = canvas.getContext('2d');
 
@@ -793,7 +793,7 @@
                 this.size = Math.random() * 2.5 + 0.5;
                 this.speedX = (Math.random() - 0.5) * 0.4;
                 this.speedY = (Math.random() - 0.5) * 0.4;
-                this.color = Math.random() > 0.5 ? '#d4af37' : (Math.random() > 0.5 ? '#f59e0b' : '#312e81');
+                this.color = Math.random() > 0.4 ? '#d4af37' : (Math.random() > 0.5 ? '#10b981' : '#f59e0b');
                 this.alpha = Math.random() * 0.7 + 0.3;
             }
             update() {
